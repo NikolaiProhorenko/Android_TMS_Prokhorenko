@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_graph"
+    app:startDestination="@id/registrationForm">
+
+    <fragment
+        android:id="@+id/registrationForm"
+        android:name="base.RegistrationForm"
+        android:label="RegistrationForm" >
+        <action
+            android:id="@+id/action_registrationForm_to_aboutNewFragment"
+            app:destination="@id/aboutNewFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/aboutNewFragment"
+        android:name="fragments.AboutNewFragment"
+        android:label="fragment_about_new"
+        tools:layout="@layout/fragment_about_new" />
+    <activity
+        android:id="@+id/mainActivity"
+        android:name="android.tms_prokhorenko.MainActivity"
+        android:label="MainActivity" />
+</navigation>
